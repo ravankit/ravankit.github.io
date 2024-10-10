@@ -18,8 +18,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Research Associate Professor in the Department of Robotics at [Tohoku University, Japan](https://www.tohoku.ac.jp/en/). I obtained my Ph.D. in Human Mechanical Systems and Design Engineering from [Hokkaido University](https://www.global.hokudai.ac.jp/), Japan in 2015 majoring in `autonomous mobile robot navigation` and was a MEXT scholarship recepient from the government of Japan for my graduate studies from 2012- (Masters and Doctoral). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research areas are in `mobile robot navigation`, `path planning`, `multi-robot systems`, and `probabilistic inferencing and scene understanding for mobile robots`. I am particularly interested in service robots 
