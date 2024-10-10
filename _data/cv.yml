@@ -2,30 +2,30 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Ankit Ravankar
+    #- name: Date of Birth
+      #value: 14th March 1879
     - name: Languages
-      value: English, German
+      value: English (Full Professional), Japanese (Business), Hindi (Native)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD (Human Mechanical Systems and Design Engineering)
+      institution: Hokkaido University, Sapporo, Japan
+      year: Sept. 2015
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Thesis Title - Probabilistic Approaches and Algorithms for Indoor Robot Mapping in Structured Environments 
+        - Supervisor - Prof. Yukinori Kobyashi
+       # - title: Description 3.
+         # contents:
+          #  - Sub-description 1.
+         #   - Sub-description 2.
+    - title: Master of Engineering (M.Eng.) (Human Mechanical Systems and Design Engineering)
+      institution: Hokkaido University, Sapporo, Japan
+      year: Sept. 2012
       description:
-        - Description 1.
+        - Thesis Title - Probabilistic Approaches and Algorithms for Indoor Robot Mapping in Structured Environments 
         - Description 2.
 
 - title: Experience
