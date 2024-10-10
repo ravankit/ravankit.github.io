@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ankitravankar.github.io/sitemap.xml
+Sitemap: https://ravankit.github.io/sitemap.xml
