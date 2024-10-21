@@ -202,7 +202,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 10 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -332,6 +332,15 @@ scholar:
 
   details_dir: bibliography
   details_link: Details
+ 
+  # Customize category names
+  #type_names:
+    #article: 
+    #inproceedings: 
+    #preprint: 
+ 
+  # Control display order of the categories
+  #type_order: [article, inproceedings, preprint]
 
   query: "@*"
   group_by: year
