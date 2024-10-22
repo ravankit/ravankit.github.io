@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper titled "[Concept and Prototype Development of Adaptive Touch Walking Support Robot for Maximizing Human Physical Potential](https://ieeexplore.ieee.org/abstract/document/10560462)" got accepted for IEEE-RAL!
+Our paper titled "[Concept and Prototype Development of Adaptive Touch Walking Support Robot for Maximizing Human Physical Potential](https://ieeexplore.ieee.org/abstract/document/10560462)" got accepted for IEEE-RAL.
