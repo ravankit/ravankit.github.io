@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Tohoku University, Japan</a>. 
+subtitle: <a href='#'>(Associate Professor, Tohoku University, Japan)</a>. 
 
 profile:
   align: right

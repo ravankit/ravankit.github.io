@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: For complete list of papers I have published, checkout my  <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=en" target="_blank">Google Scholar</a> page.
+description: 
 sections:
   - bibquery: "@article"
     text: "Journal articles"
@@ -18,6 +18,10 @@ social: true
 nav: true
 nav_order: 4
 ---
+<p>
+  For a complete and updated list of all publications, check out my profile on 
+  <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+</p>
 <!-- Horizontal navigation -->
 <p>
   <a href="#journals">Journals</a> |
