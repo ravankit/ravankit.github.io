@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: <strong>Ankit</strong> Ravankar # the website title (if blank, full name will be used instead)
-first_name: Ankit 
+title: Ankit Ravankar # the website title (if blank, full name will be used instead)
+first_name: <strong>Ankit</strong> 
 middle_name: 
 last_name: Ravankar
 email: ankit[at]srd.mech.tohoku.ac.jp
