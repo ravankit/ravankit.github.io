@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
+description:
 sections:
   - bibquery: "@article"
     text: "Journal articles"
@@ -13,10 +13,21 @@ sections:
   - bibquery: "@misc|@phdthesis|@mastersthesis"
     text: "Thesis"
     id: "preprints"  # Add this to match the navigation link
-years: [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011]
+years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011]
 social: true
 nav: true
 nav_order: 4
+dropdown: true
+children:
+  - title: All Publications
+    permalink: /publications/
+  - title: divider
+  - title: Journals
+    permalink: /publications/#journals
+  - title: Conferences
+    permalink: /publications/#conferences
+  - title: Thesis
+    permalink: /publications/#preprints
 ---
 <p>
   For a complete and updated list of all publications, check out my profile on 
