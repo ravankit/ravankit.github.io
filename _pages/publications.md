@@ -31,7 +31,7 @@ nav_order: 4
 <div class="publications">
 
 {%- for section in page.sections %}
-  <a id="{{section.id}}"></a>
+  <div id="{{section.id}}">
   <p class="bibtitle">{{section.text}}</p>
   {%- for y in page.years %}
 
@@ -49,7 +49,28 @@ nav_order: 4
     {%- endif -%}
 
   {%- endfor %}
+  </div>
 
 {%- endfor %}
 
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  ['journals', 'conferences'].forEach(function (sectionId) {
+    var section = document.getElementById(sectionId);
+    if (!section) return;
+    var items = section.querySelectorAll('ol.bibliography li');
+    var total = items.length;
+    items.forEach(function (li, index) {
+      var titleDiv = li.querySelector('.title');
+      if (titleDiv) {
+        var numSpan = document.createElement('span');
+        numSpan.className = 'pub-number';
+        numSpan.textContent = (total - index) + '. ';
+        titleDiv.insertBefore(numSpan, titleDiv.firstChild);
+      }
+    });
+  });
+});
+</script>
