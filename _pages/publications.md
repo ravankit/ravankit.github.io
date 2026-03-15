@@ -7,7 +7,7 @@ sections:
   - bibquery: "@article"
     text: "Journal articles"
     id: "journals"  # Add this to match the navigation link
-  - bibquery: "@inproceedings[note!=domestic][note!=intl_other]"
+  - bibquery: "@inproceedings[note!=domestic && note!=intl_other]"
     text: "Conference and workshop papers"
     id: "conferences"  # Add this to match the navigation link
   - bibquery: "@inproceedings[note=intl_other]"
