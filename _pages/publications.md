@@ -7,9 +7,15 @@ sections:
   - bibquery: "@article"
     text: "Journal articles"
     id: "journals"  # Add this to match the navigation link
-  - bibquery: "@inproceedings"
+  - bibquery: "@inproceedings[note!=domestic][note!=intl_other]"
     text: "Conference and workshop papers"
     id: "conferences"  # Add this to match the navigation link
+  - bibquery: "@inproceedings[note=intl_other]"
+    text: "Other International Conferences"
+    id: "intl_other"
+  - bibquery: "@inproceedings[note=domestic]"
+    text: "Domestic Conferences (国内会議)"
+    id: "domestic"
   - bibquery: "@misc|@phdthesis|@mastersthesis"
     text: "Thesis"
     id: "preprints"  # Add this to match the navigation link
@@ -26,6 +32,10 @@ children:
     permalink: /publications/#journals
   - title: Conferences
     permalink: /publications/#conferences
+  - title: Other International
+    permalink: /publications/#intl_other
+  - title: Domestic Conferences
+    permalink: /publications/#domestic
   - title: Thesis
     permalink: /publications/#preprints
 ---
@@ -36,7 +46,9 @@ children:
 <!-- Horizontal navigation -->
 <p>
   <a href="#journals">Journals</a> |
-  <a href="#conferences">Conferences/Proceedings</a> |
+  <a href="#conferences">Conferences</a> |
+  <a href="#intl_other">Other International</a> |
+  <a href="#domestic">Domestic (国内会議)</a> |
   <a href="#preprints">Thesis</a>
 </p>
 <div class="publications">
@@ -68,7 +80,7 @@ children:
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  ['journals', 'conferences'].forEach(function (sectionId) {
+  ['journals', 'conferences', 'intl_other', 'domestic'].forEach(function (sectionId) {
     var section = document.getElementById(sectionId);
     if (!section) return;
     var items = section.querySelectorAll('ol.bibliography li');
