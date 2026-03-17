@@ -30,7 +30,7 @@
     </div>
     {% if include.limit and site.announcements.limit and news_size > site.announcements.limit %}
       <div class="text-center mt-2">
-        <a href="{{ '/news/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Previous News &rarr;</a>
+        <a href="{{ '/news/' | relative_url }}" style="font-size: 1rem;">Previous News &rarr;</a>
       </div>
     {% endif %}
   {% else %}
