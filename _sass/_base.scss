@@ -970,8 +970,10 @@ footer.sticky-bottom {
       padding: 1.1rem 1.2rem;
       border: 1px solid var(--global-divider-color);
       border-radius: 16px;
-      background-color: color-mix(in srgb, var(--global-card-bg-color) 82%, transparent);
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+      background-color: var(--global-card-bg-color);
+      box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08),
+        0 1px 0 rgba(255, 255, 255, 0.35) inset;
 
       .publication-media {
         margin-bottom: 0.75rem;
