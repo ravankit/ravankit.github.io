@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers got accepted to 34th IEEE International Conference on Robot and Human Interactive Communication ([IEEE RO-MAN2025](https://www.ro-man2025.org/)) to be held in Eidhoven, Netherlands! 
+Two papers were accepted to the 34th IEEE International Conference on Robot and Human Interactive Communication ([IEEE RO-MAN 2025](https://www.ro-man2025.org/)), to be held in Eindhoven, the Netherlands.

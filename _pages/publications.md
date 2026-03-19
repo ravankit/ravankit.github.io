@@ -6,13 +6,13 @@ description:
 sections:
   - bibquery: "@article"
     text: "Journal articles"
-    id: "journals"  # Add this to match the navigation link
+    id: "journals"
   - bibquery: "@inproceedings"
     text: "Conference and workshop papers"
-    id: "conferences"  # Add this to match the navigation link
+    id: "conferences"
   - bibquery: "@misc|@phdthesis|@mastersthesis"
     text: "Thesis"
-    id: "preprints"  # Add this to match the navigation link
+    id: "thesis"
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011]
 social: true
 nav: true
@@ -27,22 +27,26 @@ children:
   - title: Conferences
     permalink: /publications/#conferences
   - title: Thesis
-    permalink: /publications/#preprints
+    permalink: /publications/#thesis
 ---
-<p>
-  For a complete and updated list of all publications, check out my profile on 
-  <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=en" target="_blank">Google Scholar</a>.
-</p>
-<!-- Horizontal navigation -->
-<p>
-  <a href="#journals">Journals</a> |
-  <a href="#conferences">Conferences/Proceedings</a> |
-  <a href="#preprints">Thesis</a>
-</p>
+<div class="publications-intro">
+  <p>
+    A curated archive of journal articles, conference papers, and thesis work.
+    For a complete and updated list, visit
+    <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+  </p>
+</div>
+
+<nav class="pub-nav" aria-label="Publications sections">
+  <a href="#journals">Journals</a>
+  <a href="#conferences">Conferences</a>
+  <a href="#thesis">Thesis</a>
+</nav>
+
 <div class="publications">
 
 {%- for section in page.sections %}
-  <div id="{{section.id}}">
+  <section id="{{section.id}}" class="publication-section">
   <p class="bibtitle">{{section.text}}</p>
   {%- for y in page.years %}
 
@@ -55,12 +59,12 @@ children:
     {%- if citecount !="0" %}
 
       <h2 class="year">{{y}}</h2>
-      {% bibliography -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
+      {% bibliography --group_by none -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
 
     {%- endif -%}
 
   {%- endfor %}
-  </div>
+  </section>
 
 {%- endfor %}
 
@@ -71,16 +75,16 @@ document.addEventListener('DOMContentLoaded', function () {
   ['journals', 'conferences'].forEach(function (sectionId) {
     var section = document.getElementById(sectionId);
     if (!section) return;
-    var items = section.querySelectorAll('ol.bibliography li');
-    var total = items.length;
+
+    var items = section.querySelectorAll('ol.bibliography > li');
     items.forEach(function (li, index) {
       var titleDiv = li.querySelector('.title');
-      if (titleDiv) {
-        var numSpan = document.createElement('span');
-        numSpan.className = 'pub-number';
-        numSpan.textContent = (total - index) + '. ';
-        titleDiv.insertBefore(numSpan, titleDiv.firstChild);
-      }
+      if (!titleDiv || titleDiv.querySelector('.pub-number')) return;
+
+      var numSpan = document.createElement('span');
+      numSpan.className = 'pub-number';
+      numSpan.textContent = (index + 1) + '. ';
+      titleDiv.insertBefore(numSpan, titleDiv.firstChild);
     });
   });
 });

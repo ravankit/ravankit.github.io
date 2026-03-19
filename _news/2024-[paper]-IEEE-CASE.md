@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper got accepted to IEEE 20th International Conference on Automation Science and Engineering [IEEE CASE](https://2024.ieeecase.org/).
+One paper was accepted to the [IEEE 20th International Conference on Automation Science and Engineering (IEEE CASE 2024)](https://2024.ieeecase.org/).
