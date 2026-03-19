@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will be giving an invited talk at the workshop on Addressing the Societal Challenge of Aging through Integrated Robotic Support Systems at the IEEE/SICE International Symposium on System Integration [(IEEE/SICE SII2026)](https://hcr.iar.kit.edu/workshop.php) at Cancun, Mexico. 
-
+I will give an invited talk at the workshop on Addressing the Societal Challenge of Aging through Integrated Robotic Support Systems at the [IEEE/SICE International Symposium on System Integration (SII 2026)](https://hcr.iar.kit.edu/workshop.php) in Cancun, Mexico.

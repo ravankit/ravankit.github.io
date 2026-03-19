@@ -1,13 +1,3 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Ankit Ravankar
-    #- name: Date of Birth
-      #value: 14th March 1879
-    - name: Languages
-      value: English (Full Professional), Japanese (Business), Hindi (Native)
-
 - title: Education
   type: time_table
   contents:
@@ -69,27 +59,22 @@
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
-  type: time_table
+  type: list
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - Nobel Prize in Physics (1921)
+    - Matteucci Medal (1921)
+    - Max Planck Medal (2029)
 
-- title: Academic Interests
-  type: nested_list
+- title: Areas I Work In
+  type: list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - Foundation Modeling
+    - Physical AI
+    - Navigation
+    - System Integration
+    - Field Robotics
+    - Human-Robot Collaboration
+    - Human-Robot Interaction
 
 - title: Other Interests
   type: list

@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
+  <header class="post-header about-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -14,7 +14,7 @@ layout: default
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
-  <article>
+  <article class="about-page">
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -45,19 +45,19 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix about-body">{{ content }}</div>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
+      <h2 class="about-section-title">
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
+    {% if site.latest_posts.enabled and page.latest_posts != false %}
+      <h2 class="about-section-title">
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
@@ -65,7 +65,7 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
+      <h2 class="about-section-title">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}

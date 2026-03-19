@@ -30,7 +30,7 @@
       "startDate": "2022",
       "endDate": "Present",
       "summary": "",
-      "highlights": ["Mobile Robots, Semantic Scene Understanding, Multi-robot Systems, Healthcare Robotics, Assistive Robotics"]
+      "highlights": ["Mobile Robots, Semantic Scene Understanding, Multi-robot Systems, Healthcare Robotics, Assistive Robotics, Foundation Modeling, Physical AI, Navigation, System Integration, Human-Robot Collaboration, Human-Robot Interaction"]
     },
     {
       "name": "Tohoku University, School of Engineering Japan",
@@ -39,7 +39,7 @@
       "startDate": "2021",
       "endDate": "2022",
       "summary": "",
-      "highlights": ["Mobile Robots, Semantic Scene Understanding, Multi-robot Systems, Healthcare Robotics, Assistive Robotics"]
+      "highlights": ["Mobile Robots, Semantic Scene Understanding, Multi-robot Systems, Healthcare Robotics, Assistive Robotics, Foundation Modeling, Physical AI, Navigation, System Integration, Human-Robot Collaboration, Human-Robot Interaction"]
     },
     {
       "name": "Hokkaido University, School of Engineering, Japan",
@@ -48,7 +48,7 @@
       "startDate": "2016",
       "endDate": "2021",
       "summary": "",
-      "highlights": ["Mobile Robots, Multi-robot Systems, Field Robotics, Agricultur Robotics, UAV, Autonomous Navigation, SLAM, Path Planning"]
+      "highlights": ["Mobile Robots, Multi-robot Systems, Field Robotics, Agriculture Robotics, UAV, Autonomous Navigation, SLAM, Path Planning, Navigation, System Integration"]
     },
     {
       "name": "Hokkaido University, Institute of Higher Education, Japan",
@@ -67,8 +67,8 @@
       "url": "https://www.global.hokudai.ac.jp/",
       "area": "Human Mechanical Systems and Design Engineering",
       "studyType": "Doctor of Philosophy (Ph.D.)",
-      "startDate": "2012-10-01",
-      "endDate": "2015-09-27",
+      "startDate": "",
+      "endDate": "2015",
       "GPA": "4",
       "Thesis": ["Probabilistic Approaches and Algorithms for Indoor Robot Mapping in Structured Environments"],
       "Supervisor": "Prof. Yukinori Kobyashi"
@@ -79,8 +79,8 @@
       "url": "https://www.global.hokudai.ac.jp/",
       "area": "Human Mechanical Systems and Design Engineering",
       "studyType": "Master of Engineering (M. Eng.)",
-      "startDate": "2010-10-01",
-      "endDate": "2012-09-25",
+      "startDate": "",
+      "endDate": "2012",
       "GPA": "3.9",
       "Thesis": ["Map building from laser range sensor information using mixed data clustering and singular value decomposition in noisy environment"],
       "Supervisor": "Prof. Yukinori Kobyashi"
@@ -91,7 +91,7 @@
       "url": "",
       "area": "Production Engineering",
       "studyType": "Bachelor of Engineering (B. Eng.)",
-      "startDate": "2005",
+      "startDate": "",
       "endDate": "2009",
       "Grade": "First Class",
       "Thesis": [""],

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participated and presented six papers at the The Robotics and Mechatronics Conference 2025 (ROBOMECH2025) held in Yamagata, Japan. 
+I participated in and presented six papers at the Robotics and Mechatronics Conference 2025 (ROBOMECH 2025) held in Yamagata, Japan.

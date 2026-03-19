@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One papers got accepted to  [The 2026 IEEE/SICE International Symposium on System Integration (SII 2026) (IEEE/SICE SII2026)](https://sice-si.org/SII2026/) to be held in Cancun, Mexico. 
-
+One paper was accepted to the [2026 IEEE/SICE International Symposium on System Integration (SII 2026)](https://sice-si.org/SII2026/), to be held in Cancun, Mexico.
