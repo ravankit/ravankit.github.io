@@ -10,9 +10,6 @@ sections:
   - bibquery: "@inproceedings"
     text: "Conference and workshop papers"
     id: "conferences"
-  - bibquery: "@misc|@phdthesis|@mastersthesis"
-    text: "Thesis"
-    id: "thesis"
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011]
 social: true
 nav: true
@@ -26,12 +23,10 @@ children:
     permalink: /publications/#journals
   - title: Conferences
     permalink: /publications/#conferences
-  - title: Thesis
-    permalink: /publications/#thesis
 ---
 <div class="publications-intro">
   <p>
-    A curated archive of journal articles, conference papers, and thesis work.
+    A curated archive of journal articles and conference papers.
     For a complete and updated list, visit
     <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=en" target="_blank">Google Scholar</a>.
   </p>
@@ -40,7 +35,6 @@ children:
 <nav class="pub-nav" aria-label="Publications sections">
   <a href="#journals">Journals</a>
   <a href="#conferences">Conferences</a>
-  <a href="#thesis">Thesis</a>
 </nav>
 
 <div class="publications">
