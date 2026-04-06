@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[current_lang] | default: site.data.i18n.en %}
 {% assign year = page.date | date: '%Y' %}
 {% assign tags = page.tags | join: '' %}
 {% assign categories = page.categories | join: '' %}
@@ -18,9 +20,21 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-      Created in {{ page.date | date: '%B %d, %Y' }}
-      {% if page.author %}by {{ page.author }}{% endif %}
-      {% if page.last_updated %}, last updated in {{ page.last_updated | date: '%B %d, %Y' }}{% endif %}
+      {{ t.labels.created_in }}
+      {% if current_lang == 'ja' %}
+        {{ page.date | date: '%Y年%-m月%-d日' }}
+      {% else %}
+        {{ page.date | date: '%B %d, %Y' }}
+      {% endif %}
+      {% if page.author %}{{ t.labels.by }} {{ page.author }}{% endif %}
+      {% if page.last_updated %}
+        , {{ t.labels.last_updated }}
+        {% if current_lang == 'ja' %}
+          {{ page.last_updated | date: '%Y年%-m月%-d日' }}
+        {% else %}
+          {{ page.last_updated | date: '%B %d, %Y' }}
+        {% endif %}
+      {% endif %}
       {% if page.meta %}• {{ page.meta }}{% endif %}
     </p>
     <p class="post-tags">
@@ -78,7 +92,7 @@ layout: default
   {% endif %}
 
   {% if page.related_publications %}
-    <h2>References</h2>
+    <h2>{{ t.labels.references }}</h2>
     <div class="publications">
       {% bibliography --cited_in_order %}
     </div>

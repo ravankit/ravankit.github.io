@@ -1,3 +1,10 @@
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[current_lang] | default: site.data.i18n.en %}
+{% if current_lang == 'ja' %}
+  {% assign news_index_url = '/ja/news/' %}
+{% else %}
+  {% assign news_index_url = '/news/' %}
+{% endif %}
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
@@ -15,11 +22,22 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
+          {% assign news_key = item.path | split: '/' | last | split: '.md' | first %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <th scope="row" style="width: 20%">
+              {% if current_lang == 'ja' %}
+                {{ item.date | date: '%Y年%-m月%-d日' }}
+              {% else %}
+                {{ item.date | date: '%b %d, %Y' }}
+              {% endif %}
+            </th>
             <td>
               {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% if current_lang == 'ja' and t.news[news_key] %}
+                  {{ t.news[news_key] | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% endif %}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
@@ -30,10 +48,10 @@
     </div>
     {% if include.limit and site.announcements.limit and news_size > site.announcements.limit %}
       <div class="text-center mt-2">
-        <a href="{{ '/news/' | relative_url }}" style="font-size: 1rem;">Previous News &rarr;</a>
+        <a href="{{ news_index_url | relative_url }}" style="font-size: 1rem;">{{ t.labels.previous_news }}</a>
       </div>
     {% endif %}
   {% else %}
-    <p>No news so far...</p>
+    <p>{{ t.labels.no_news }}</p>
   {% endif %}
 </div>

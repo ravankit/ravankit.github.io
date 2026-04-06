@@ -2,6 +2,8 @@
 layout: about
 title: About
 permalink: /
+lang: en
+ref: home
 subtitle: <a href='https://www.tohoku.ac.jp/en/' target='_blank'>Associate Professor, Tohoku University, Japan</a>
 
 profile:

@@ -1,16 +1,16 @@
 ---
 layout: page
-permalink: /publications/
-title: Publications
+permalink: /ja/publications/
+title: 論文
 description:
-lang: en
+lang: ja
 ref: publications
 sections:
   - bibquery: "@article"
-    text: "Journal articles"
+    text: "学術雑誌"
     id: "journals"
   - bibquery: "@inproceedings"
-    text: "Conference and workshop papers"
+    text: "国際会議・ワークショップ"
     id: "conferences"
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011]
 social: true
@@ -18,25 +18,26 @@ nav: true
 nav_order: 4
 dropdown: true
 children:
-  - title: All Publications
-    permalink: /publications/
+  - title: 論文一覧
+    permalink: /ja/publications/
   - title: divider
-  - title: Journals
-    permalink: /publications/#journals
-  - title: Conferences
-    permalink: /publications/#conferences
+  - title: 学術雑誌
+    permalink: /ja/publications/#journals
+  - title: 国際会議
+    permalink: /ja/publications/#conferences
 ---
 <div class="publications-intro">
   <p>
-    A curated archive of journal articles and conference papers.
-    For a complete and updated list, visit
-    <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+    学術雑誌論文および国際会議論文を掲載しています。
+    最新かつ完全な一覧は
+    <a href="https://scholar.google.co.jp/citations?user=DOiXntEAAAAJ&hl=ja" target="_blank">Google Scholar</a>
+    をご覧ください。
   </p>
 </div>
 
 <nav class="pub-nav" aria-label="Publications sections">
-  <a href="#journals">Journals</a>
-  <a href="#conferences">Conferences</a>
+  <a href="#journals">学術雑誌</a>
+  <a href="#conferences">国際会議</a>
 </nav>
 
 <div class="publications">
@@ -46,17 +47,13 @@ children:
   <p class="bibtitle">{{section.text}}</p>
   {%- for y in page.years %}
 
-    {%- comment -%}  Count bibliography in actual section and year {%- endcomment -%}
     {%- capture citecount -%}
     {%- bibliography_count -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] -%}
     {%- endcapture -%}
 
-    {%- comment -%} If exist bibliography in actual section and year, print {%- endcomment -%}
     {%- if citecount !="0" %}
-
       <h2 class="year">{{y}}</h2>
       {% bibliography --group_by none -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
-
     {%- endif -%}
 
   {%- endfor %}

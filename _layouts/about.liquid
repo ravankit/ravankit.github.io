@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[current_lang] | default: site.data.i18n.en %}
+{% if current_lang == 'ja' %}
+  {% assign news_url = '/ja/news/' %}
+  {% assign publications_url = '/ja/publications/' %}
+  {% assign blog_url = '/ja/blog/' %}
+{% else %}
+  {% assign news_url = '/news/' %}
+  {% assign publications_url = '/publications/' %}
+  {% assign blog_url = '/blog/' %}
+{% endif %}
 <div class="post">
   <header class="post-header about-header">
     <h1 class="post-title">
@@ -50,7 +61,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2 class="about-section-title">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ news_url | relative_url }}" style="color: inherit">{{ t.labels.news }}</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -58,7 +69,7 @@ layout: default
     <!-- Latest posts -->
     {% if site.latest_posts.enabled and page.latest_posts != false %}
       <h2 class="about-section-title">
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ blog_url | relative_url }}" style="color: inherit">{{ t.labels.latest_posts }}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -66,7 +77,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2 class="about-section-title">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ publications_url | relative_url }}" style="color: inherit">{{ t.labels.selected_publications }}</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

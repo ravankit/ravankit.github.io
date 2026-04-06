@@ -1,9 +1,38 @@
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data.i18n[current_lang] | default: site.data.i18n.en %}
+{% if current_lang == 'ja' %}
+  {% assign target_lang = 'en' %}
+  {% assign switch_fallback = '/' %}
+{% else %}
+  {% assign target_lang = 'ja' %}
+  {% assign switch_fallback = '/ja/' %}
+{% endif %}
+
+{% assign all_docs = site.pages | concat: site.news | concat: site.projects | concat: site.posts %}
+{% assign switch_url = switch_fallback %}
+{% if page.ref %}
+  {% for doc in all_docs %}
+    {% if doc.ref == page.ref and doc.lang == target_lang %}
+      {% assign switch_url = doc.url %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign home_page = nil %}
+{% for p in site.pages %}
+  {% if p.ref == 'home' and p.lang == current_lang %}
+    {% assign home_page = p %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      {% if page.ref != 'home' %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ home_page.url | default: '/' | relative_url }}">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -42,24 +71,20 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
-
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
-              {% if page.permalink == '/' %}
+          <li class="nav-item {% if page.ref == 'home' %}active{% endif %}">
+            <a class="nav-link" href="{{ home_page.url | default: '/' | relative_url }}">
+              {{- home_page.title | default: 'About' }}
+              {% if page.ref == 'home' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
           </li>
 
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+          {% assign sorted_pages = site.pages | where: 'lang', current_lang | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and p.ref != 'home' %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -111,15 +136,18 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+              <button id="search-toggle" title="{{ t.labels.search }}" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
               </button>
             </li>
           {% endif %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ switch_url | relative_url }}">{{ t.labels.switch_to }}</a>
+          </li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
+              <button id="light-toggle" title="{{ t.labels.change_theme }}">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>

@@ -1,0 +1,120 @@
+en:
+  locale: en_US
+  labels:
+    news: news
+    latest_posts: latest posts
+    selected_publications: selected publications
+    references: References
+    previous_news: Previous News &rarr;
+    no_news: No news so far...
+    download_pdf: Download PDF
+    created_in: Created in
+    by: by
+    last_updated: last updated in
+    search: Search
+    change_theme: Change theme
+    switch_to: 日本語
+  cv_sections:
+    education: Education
+    work: Work
+    volunteer: Volunteer
+    projects: Projects
+    awards: Awards
+    skills: Skills
+    publications: Publications
+    languages: Languages
+    interests: Interests
+    certificates: Certificates
+    references: References
+
+ja:
+  locale: ja_JP
+  labels:
+    news: お知らせ
+    latest_posts: 最新記事
+    selected_publications: 主な論文
+    references: 参考文献
+    previous_news: 以前のお知らせ &rarr;
+    no_news: まだお知らせはありません。
+    download_pdf: PDFを開く
+    created_in: 投稿日
+    by: 著者
+    last_updated: 最終更新
+    search: 検索
+    change_theme: 表示テーマを切り替え
+    switch_to: English
+  cv_sections:
+    education: 学歴
+    work: 職歴
+    volunteer: ボランティア
+    projects: プロジェクト
+    awards: 受賞
+    skills: スキル
+    publications: 論文
+    languages: 言語
+    interests: 関心分野
+    certificates: 資格
+    references: 推薦者
+  news:
+    "2021-[award]-SICE-Best Paper": >-
+      Journal of Control, Measurements, and System Integration（Taylor & Francis）に掲載された論文に対して、SICE Best Journal Paper Award を受賞しました。<br><br>論文タイトル: Line Segment Extraction and Polyline Mapping for Mobile Robots in Indoor Structured Environments Using Range Sensors
+    "2022-[general]-RoboSymp-invitedTalk": >-
+      [第27回ロボティクスシンポジア 2022](http://www.robotics-symposia.org/27th/) にて招待講演を行いました。<br><br>講演タイトル: "Robot Exploration and Mapping of Unstructured Indoor Environments using segment-based Clustering of Range Data with Uncertainty"
+    "2023-[social]-RSJ-annualConference-Committee": >-
+      仙台で開催された [第41回日本ロボット学会学術講演会（RSJ2023）](https://ac.rsj-web.org/2023/) の企画委員長を務めました。
+    "2024-[award]-ICCCDS": >-
+      インド・ムンバイで開催された International Conference on Communication, Computing and Data Security（IC-CCDS 2024）で Best Paper Award を受賞しました。
+    "2024-[general]-ICRA-EXPO": >-
+      [IEEE ICRA 2024](https://2024.ieee-icra.org/about/#Committee) の運営委員を務め、日本・横浜で開催された [IEEE ICRA EXPO 2024](https://2024.ieee-icra.org/contribute/icra-expo/) の企画運営に携わりました。
+    "2024-[general]-ICRA-yokohama": >-
+      日本・横浜で開催された [ICRA 2024](https://2024.ieee-icra.org/) にて、私たちのグループは計8件の発表を行いました。内訳は RAL 論文1件、Late-Breaking Paper 1件、Video Paper 1件、ICRA EXPO 論文5件です。
+    "2024-[general]-IEEE-IoT_Editor": >-
+      [IEEE Internet of Things Journal](https://ieee-iotj.org/editorial-board/) の Associate Editor に就任しました。
+    "2024-[general]-IntRob_Editor": >-
+      [Intelligence & Robotics](https://www.oaepublish.com/ir/junior_editorial_board) 誌の Junior Editorial Board Member に就任しました。
+    "2024-[general]-ROMAN2024": >-
+      米国カリフォルニア州パサデナで開催された [33rd IEEE International Conference on Robot and Human Interactive Communication（IEEE RO-MAN 2024）](https://www.ro-man2024.org/) に参加し、アバターテレオペレーションに関する論文を発表しました。
+    "2024-[general]-SII25-AE": >-
+      [IEEE/SICE International Symposium on System Integration（SII 2025）](https://sice-si.org/SII2025/) の Associate Editor を務めます。
+    "2024-[paper]-IEEE-CASE": >-
+      1件の論文が [IEEE 20th International Conference on Automation Science and Engineering（IEEE CASE 2024）](https://2024.ieeecase.org/) に採択されました。
+    "2024-[paper]-IEEE-RAL-Terayama1": >-
+      論文 "[Concept and Prototype Development of Adaptive Touch Walking Support Robot for Maximizing Human Physical Potential](https://ieeexplore.ieee.org/abstract/document/10560462)" が IEEE RA-L に採択されました。
+    "2024-[paper]-IEEE-access-24": >-
+      論文が [IEEE Access](https://ieeexplore.ieee.org/abstract/document/10637402) に採択されました。
+    "2024-[paper]-JCMSI-Emoto": >-
+      論文 "[Automatic inspection of wheel surface defects using a combination of laser sensors and machine vision](https://www.tandfonline.com/doi/full/10.1080/18824889.2024.2314800)" が SICE JCMSI に採択されました。
+    "2024-[paper]-JSME-MechJournal-emoto": >-
+      論文 "[A method for detecting wear and damage on railcar wheel tread surface using a combination of laser measurement and machine vision](https://www.jstage.jst.go.jp/article/mej/11/3/11_23-00352/_article/-char/ja/)" が JSME Mechanical Engineering Journal に採択されました。
+    "2024-[paper]-SII25-PaperAccepted": >-
+      2025年1月にドイツ・ミュンヘンで開催される IEEE [SII2025](https://sice-si.org/SII2025/) に2件の論文が採択されました。
+    "2025-[Award]-SII25-BestStudentPaper": >-
+      ミュンヘンで開催された IEEE/SICE [SII2025](https://sice-si.org/SII2025/) で発表した論文 "Open Vocabulary Object Search Utilizing Large Language Models and Fuzzy Inferencing" が Best Student Paper Award を受賞しました。
+    "2025-[general]-EvolutionaryIntelligence-Editor": >-
+      [Evolutionary Intelligence](https://link.springer.com/journal/12065)（Springer）の Editorial Board に加わりました。
+    "2025-[general]-FrontiersRoboEditor copy": >-
+      [Frontiers in Robotics and AI](https://www.frontiersin.org/journals/robotics-and-ai/editors) の Industrial Robotics and Automation セクションにおいて、Associate Editor に就任しました。
+    "2025-[general]-ICRA-EXPO2025": >-
+      [IEEE ICRA 2025](https://2025.ieee-icra.org/about/committee/) の運営委員を務めます。また、米国ジョージア州アトランタで開催される [IEEE ICRA EXPO 2025](https://2025.ieee-icra.org/about/committee/) の共同チェアとして企画運営を担当します。
+    "2025-[general]-IROS-EXPO": >-
+      [IEEE/RSJ International Conference on Intelligent Robots and Systems（IROS 2025）](https://www.iros25.org/) の運営委員を務め、中国・杭州で開催される [IROS EXPO 2025](https://www.iros25.org/CallForEXPOs) のチェアを担当します。
+    "2025-[paper-announce]-IEEE-ROMAN25": >-
+      オランダ・アイントホーフェンで開催される 34th IEEE International Conference on Robot and Human Interactive Communication（[IEEE RO-MAN 2025](https://www.ro-man2025.org/)）に2件の論文が採択されました。
+    "2025-[paper-announce]-IROS2025-chikhalikar": >-
+      論文 [Enhancing Object Search in Indoor Spaces via Personalized Object-Factored Ontologies](https://ieeexplore.ieee.org/abstract/document/11247493) が [2025 IEEE/RSJ International Conference on Intelligent Robots and Systems（IROS 2025）](https://www.iros25.org/) に口頭発表論文として採択されました。
+    "2025-[paper-announce]-SICE-FES25": >-
+      2025年9月にタイ・チェンマイで開催される [2025 SICE Festival with Annual Conference（SICE FES 2025）](https://sice2025.sice.jp/) に2件の論文が採択されました。
+    "2025-[paper-announce]-SII2026": >-
+      2026 IEEE/SICE International Symposium on System Integration（[SII 2026](https://sice-si.org/SII2026/)）に1件の論文が採択されました。開催地はメキシコ・カンクンです。
+    "2025-[paper-announce]-robomech25": >-
+      日本・山形で開催された Robotics and Mechatronics Conference 2025（ROBOMECH 2025）に参加し、6件の論文を発表しました。
+    "2025-[paper]-ICRA-2025": >-
+      米国アトランタで開催された IEEE ICRA 2025 に参加し、[Concept and Prototype Development of Adaptive Touch Walking Support Robot for Maximizing Human Physical Potential](https://ieeexplore.ieee.org/abstract/document/10560462) を発表しました。
+    "2025-[paper]-IEEE-ICORR25": >-
+      論文 "Somnomat Care: A Novel Robotic Bed for Vestibular Stimulation in Nursing Homes" が [2025 International Conference on Rehabilitation Robotics（ICORR）](https://icorr-c.org/icorr_2025/) に採択されました。会議は 2025年5月12日から16日に米国イリノイ州シカゴで開催されます。
+    "2025-[paper]-IEEE-RAL-sebastian": >-
+      論文 "[Real-Time Geometric-Registration-Based Precision Localization for Autonomous Docking in Unstructured Factory Environment](https://ieeexplore.ieee.org/abstract/document/11020725)" が IEEE RA-L に採択されました。
+    "2026-[Speaker]-SII2026-workshop-Speaker": >-
+      メキシコ・カンクンで開催される [IEEE/SICE International Symposium on System Integration（SII 2026）](https://hcr.iar.kit.edu/workshop.php) のワークショップ「Addressing the Societal Challenge of Aging through Integrated Robotic Support Systems」で招待講演を行います。
+    "2026-[general]-IROS-Associate-Editor": >-
+      [IEEE/RSJ International Conference on Intelligent Robots & Systems（IROS 2026）](https://2026.ieee-iros.org/) の Associate Editor に就任しました。

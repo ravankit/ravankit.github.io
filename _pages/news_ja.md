@@ -1,12 +1,11 @@
 ---
 layout: page
-title: News
+title: お知らせ
 nav: true
-permalink: /news/
+permalink: /ja/news/
 nav_order: 4
-lang: en
+lang: ja
 ref: news
-
 ---
 
 {% include news.liquid %}
