@@ -56,6 +56,10 @@ ja:
     certificates: 資格
     references: 推薦者
   news:
+    "announcement_4": >-
+      オーストリア・ウィーンで開催された [IEEE ICRA 2026](https://2026.ieee-icra.org/) に参加し、一般論文1件およびワークショップ論文1件を発表しました。
+    "announcement_5": >-
+      日本・福岡で開催された [ROBOMECH 2026](https://robomech.org/2026/#) に参加し、3件の論文を発表しました。
     "2021-[award]-SICE-Best Paper": >-
       Journal of Control, Measurements, and System Integration（Taylor & Francis）に掲載された論文に対して、SICE Best Journal Paper Award を受賞しました。<br><br>論文タイトル: Line Segment Extraction and Polyline Mapping for Mobile Robots in Indoor Structured Environments Using Range Sensors
     "2022-[general]-RoboSymp-invitedTalk": >-
