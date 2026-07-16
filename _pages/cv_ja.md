@@ -6,7 +6,7 @@ nav: true
 nav_order: 1
 lang: ja
 ref: cv
-cv_pdf: CV_Ankit.pdf
+cv_pdf: CV_Ankit-July-1.pdf
 cv_role: 東北大学 准教授
 cv_intro: モバイルロボティクス、支援システム、ナビゲーション、実環境への知能ロボット導入に取り組む研究者・教育者。
 cv_tags:

@@ -6,7 +6,7 @@ nav: true
 nav_order: 1
 lang: en
 ref: cv
-cv_pdf: CV_Ankit-July2026.pdf
+cv_pdf: CV_Ankit-July-1.pdf
 cv_role: Associate Professor, Tohoku University
 cv_intro: Researcher and educator working on mobile robotics, assistive systems, navigation, and intelligent robot deployment in real-world environments.
 cv_tags:
