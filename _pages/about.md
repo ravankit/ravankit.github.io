@@ -41,3 +41,5 @@ I am an Associate Professor in the Department of Robotics at [Tohoku University,
 Before joining Tohoku University, I served as an Assistant Professor in the School of Engineering at Hokkaido University from 2015 to 2021. My current research focuses on intelligent service robots for homes, healthcare, and elderly support, especially through semantic reasoning, scene understanding, and human-centered robotic assistance.
 
 My broader work in robotics has also included field robotics and search-and-rescue systems, autonomous driving in snow environments, agricultural robotics for vineyard monitoring and weed inspection, and aerial robotics for infrastructure inspection and spectral imaging.
+
+<p><strong>Updated CV</strong> <a href="{{ '/assets/pdf/CV_Ankit-July-1.pdf' | relative_url }}" title="Open updated CV (PDF)" target="_blank" rel="noopener" style="display: inline-block; font-size: 2.25rem; line-height: 1; margin-left: 0.4rem; vertical-align: middle;"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i><span class="sr-only">Open updated CV (PDF)</span></a></p>

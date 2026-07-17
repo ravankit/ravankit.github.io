@@ -39,3 +39,5 @@ social: true
 東北大学に着任する前は、2015年から2021年まで北海道大学工学研究院で助教を務めました。現在は、家庭、医療、そして高齢者支援のための知能サービスロボットを主な対象として、意味推論、環境理解、人に寄り添うロボット支援技術の研究を進めています。
 
 これまでの研究は、サービスロボットに加えて、フィールドロボティクスや災害対応システム、雪環境における自動運転、ブドウ畑のモニタリングや雑草検査のための農業ロボティクス、さらにインフラ点検やスペクトル画像計測のための空中ロボティクスにも広がっています。
+
+<p><strong>最新のCV</strong> <a href="{{ '/assets/pdf/CV_Ankit-July-1.pdf' | relative_url }}" title="最新のCV（PDF）を開く" target="_blank" rel="noopener" style="display: inline-block; font-size: 2.25rem; line-height: 1; margin-left: 0.4rem; vertical-align: middle;"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i><span class="sr-only">最新のCV（PDF）を開く</span></a></p>

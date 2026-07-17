@@ -2,7 +2,7 @@
 layout: cv
 permalink: /ja/cv/
 title: 履歴書
-nav: true
+nav: false
 nav_order: 1
 lang: ja
 ref: cv
